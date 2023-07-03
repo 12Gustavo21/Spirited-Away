@@ -1,4 +1,4 @@
-# Chihiro Travel
+# Spirited Away
 
 > Status : Unfinished project 🕰️ / Open PR
 

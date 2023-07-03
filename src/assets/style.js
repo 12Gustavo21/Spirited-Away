@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
     width: 100%;
     height: 20vh;
+    user-select: none;  
 `;
 
 export const HeaderContainer = styled.section`
@@ -14,15 +15,15 @@ export const HeaderContainer = styled.section`
 `;
 
 export const LogoBox = styled.figure`
-    width: 50%;
+    width: 80%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 
     img {
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
         object-fit: contain;
     }   
 `;
@@ -36,15 +37,20 @@ export const Social = styled.div`
     gap: 2rem;
 `;
 
-export const SocialBox = styled.div`
+export const SocialLink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
 
-    svg {
-        width: 2.5rem;
-        height: 2.5rem;
+    img {
+        width: 2rem;
+        height: 2rem;
         object-fit: contain;
-        stroke: #F9F9F9;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 .03rem #F9F9F9);
+        }
     }
-`;  
+`;

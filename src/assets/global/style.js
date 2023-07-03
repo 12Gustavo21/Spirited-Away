@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: linear-gradient(149deg, #628E75 0%, #1A4855 100%) center center no-repeat;
+        background: linear-gradient(149deg, #628E75 0%, #1A4855 100%) center center no-repeat fixed;
+        height: 100vh;
     }
 `;

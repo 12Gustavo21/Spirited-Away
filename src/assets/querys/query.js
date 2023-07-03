@@ -8,8 +8,12 @@ query {
       url
     }
     socials {
-      iconSvg
+      url
       name
+      socialLogo {
+        id
+        url
+      }
     }
     noFaces {
       id

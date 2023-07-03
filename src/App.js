@@ -31,12 +31,14 @@ export default function App() {
       <S.Header>
         <S.HeaderContainer>
           <S.LogoBox>
-            <img src={home.logo.url} alt="logo" width={'100px'} />
+            <img src={home.logo.url} alt="logo" draggable='false' />
           </S.LogoBox>
           <S.Social>
             {
               home.socials.map((social) => (
-                <S.SocialBox key={social.name} dangerouslySetInnerHTML={{ __html: social.iconSvg }} />
+                <S.SocialLink href={social.url} target="_blank" rel="noopener noreferrer" title={social.name} >
+                    <img src={social.socialLogo.url} alt={`${social.name} icon`} draggable='false' />
+                </S.SocialLink>
               ))
             }
           </S.Social>
