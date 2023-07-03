@@ -28,6 +28,8 @@ query {
     synopsis {
       text
     }
+    trailerLink
+    watchMovieLink
   }
 }
 `;

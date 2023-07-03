@@ -4,7 +4,7 @@ import GET_HOME_DATA from "./assets/querys/query";
 
 //Styles
 import { GlobalStyle } from './assets/global/style';
-import * as S from './assets/style';
+import * as S from './assets/style/style';
 
 //Assets
 import playIcon from './assets/img/play.svg';
@@ -37,48 +37,55 @@ export default function App() {
             {
               home.socials.map((social) => (
                 <S.SocialLink href={social.url} target="_blank" rel="noopener noreferrer" title={social.name} >
-                    <img src={social.socialLogo.url} alt={`${social.name} icon`} draggable='false' />
+                  <img src={social.socialLogo.url} alt={`${social.name} icon`} draggable='false' />
                 </S.SocialLink>
               ))
             }
           </S.Social>
         </S.HeaderContainer>
       </S.Header>
-      <main>
-        <section>
-          <div>
-            <h2>{home.author.text}</h2>
-            <h1>{home.tittle.text}</h1>
-            <p>{home.synopsis.text}</p>
-          </div>
-          <div>
-            <div>
-              <button>
-                <img src={playIcon} alt="play" />
-                <span>Assistir agora</span>
-              </button>
-              <button>
-                Assista o trailer
-              </button>
-            </div>
-          </div>
-        </section>
-        <figure>
-          <img src={home.noFaces.url} alt="Illustration of No Faces from the movie" draggable="false" />
-        </figure>
-      </main>
-      <footer>
+      <S.Main>
+        <S.MainContainer>
+          <S.MovieContainer>
+            <S.Movie>
+              <S.AboutMovie>
+                <S.MovieAuthor>{home.author.text}</S.MovieAuthor>
+                <S.MovieTittle>{home.tittle.text}</S.MovieTittle>
+                <S.MovieSynopsis>{home.synopsis.text}</S.MovieSynopsis>
+              </S.AboutMovie>
+            </S.Movie>
+            <S.MovieButtons>
+              <a href={home.watchMovieLink} target="_blank" rel="noopener noreferrer" title="Watch the movie">
+                <S.MovieButton>
+                  <img src={playIcon} alt="Play Icon" />
+                  <p>Assistir agora</p>
+                </S.MovieButton>
+              </a>
+              <a href={home.trailerLink} target="_blank" rel="noopener noreferrer" title="Watch the trailer">
+                <S.MovieButton>
+                  <p>Assita o trailer</p>
+                </S.MovieButton>
+              </a>
+            </S.MovieButtons>
+          </S.MovieContainer>
+          <S.NoFaces>
+            <img src={home.noFaces.url} alt="Illustration of No Faces from the movie" draggable="false" />
+          </S.NoFaces>
+        </S.MainContainer>
+      </S.Main>
+      <S.Footer>
         <p>
           Copyright © {getCurrentYear()}
           <a
             href="https://www.instagram.com/iuricode/"
             target="_blank"
             rel="noopener noreferrer"
+            title="Author's Instagram"
           >
             @iuricode
           </a>
         </p>
-      </footer>
+      </S.Footer>
     </>
   );
 };
