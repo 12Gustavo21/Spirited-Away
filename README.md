@@ -5,7 +5,7 @@
 ## Challenge [05] Codelândia - Iuri Silva
 >Look the design: https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO
 
-<img width ='800px' src ='./src./assets/gif/Recording.gif' />
+<img width ='800px' src ='./src/assets/gif/Recording.gif' />
 
 *Technologies*
 
