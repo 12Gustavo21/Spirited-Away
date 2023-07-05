@@ -1,5 +1,9 @@
 import React from 'react';
+
+//Apollo
 import { useQuery } from "@apollo/client";
+
+//Querys
 import GET_HOME_DATA from "./assets/querys/query";
 
 //Styles
@@ -14,6 +18,7 @@ import LoadingSucess from './components/loading sucess/index';
 import LoadingError from './components/loading error/index';
 
 export default function App() {
+
   const { loading, error, data } = useQuery(GET_HOME_DATA);
 
   if (loading) return <LoadingSucess />;
@@ -30,7 +35,8 @@ export default function App() {
       <GlobalStyle />
       <S.Header>
         <S.HeaderContainer>
-          <S.LogoBox>
+          <S.LogoBox 
+          >
             <img src={home.logo.url} alt="logo" draggable='false' />
           </S.LogoBox>
           <S.Social>

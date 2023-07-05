@@ -1,11 +1,11 @@
 # Spirited Away
 
-> Status : Unfinished project 🕰️ / Open PR
+> Status : Finished project ✅ / Open PR
 
 ## Challenge [05] Codelândia - Iuri Silva
 >Look the design: https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO
 
-<img width ='800px' src ='...' />
+<img width ='800px' src ='./src./assets/gif/Recording.gif' />
 
 *Technologies*
 
