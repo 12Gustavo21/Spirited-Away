@@ -30,6 +30,10 @@ export default function App() {
     return new Date().getFullYear();
   }
 
+  setTimeout(() => {
+    document.body.style.overflowY = 'auto';
+  }, 2500);
+
   return (
     <>
       <GlobalStyle />
