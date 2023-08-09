@@ -73,7 +73,7 @@ export default function App() {
               </a>
               <a href={home.trailerLink} target="_blank" rel="noopener noreferrer" title="Watch the trailer">
                 <S.MovieButton>
-                  <p>Assita o trailer</p>
+                  <p>Assista o trailer</p>
                 </S.MovieButton>
               </a>
             </S.MovieButtons>
