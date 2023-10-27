@@ -11,7 +11,7 @@
 
 + ReactJS ⚛️
 + Styled-components 💅
-+ Apollo Client <img width ='15px' src ='https://www.apollographql.com/favicon.ico' />
++ Apollo Client <img width ='15px' src ='https://www.apollographql.com/docs/icons/icon-512x512.png?v=e03dad83eb16cf475a13342272058ebe' />
 + Hygraph <img width ='15px' src ='https://app.hygraph.com/icon-700-r-48.png' />
 
 ### How to use
